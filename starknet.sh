@@ -24,14 +24,13 @@ echo "                                                                          
 echo "                                                                                                             ";
 echo "                                                                                                             ";
 echo -e "\e[0m"
-sleep 2
 sudo apt update -y && sudo apt install curl git tmux python3 python3-venv python3-dev build-essential libgmp-dev pkg-config libssl-dev -y
 sudo curl https://sh.rustup.rs -sSf | sh -s -- -y
 source $HOME/.cargo/env
 rustup update stable --force
 cd $HOME
 rm -rf pathfinder
-git clone -b v0.4.0 https://github.com/eqlabs/pathfinder.git
+git clone -b v0.3.7 https://github.com/eqlabs/pathfinder.git
 cd pathfinder
 git fetch
 git checkout v0.3.7
